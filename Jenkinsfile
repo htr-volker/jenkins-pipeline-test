@@ -6,8 +6,7 @@ pipeline {
                 script {
                     when (env.BRANCH_NAME.contains('feature')) {
                         echo "This is a feature branch"
-                    }
-                    else {
+                    } else {
                         echo "This is not a feature branch"
                     }
                 }
