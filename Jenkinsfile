@@ -13,6 +13,9 @@ pipeline {
                     else if (env.GIT_BRANCH.contains('feature')) {
                         sh "echo This is a feature branch! Full name: $GIT_BRANCH"
                     } 
+                    else {
+                        sh "scho This branch is named: $GIT_BRANCH"
+                    }
                 }
             }
         }
