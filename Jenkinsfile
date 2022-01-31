@@ -5,9 +5,9 @@ pipeline {
             steps {
                 script {
                     if (env.GIT_BRANCH.contains('feature')) {
-                        sh "echo This is a feature branch"
+                        sh "echo This is a feature branch! It's ${env.GIT_BRANCH}"
                     } else {
-                        sh "echo This is not a feature branch"
+                        sh "echo This is not a feature branch! It's ${env.GIT_BRANCH}"
                     }
                 }
             }
