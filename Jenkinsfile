@@ -5,10 +5,10 @@ pipeline {
             steps {
                 script {
                     when (env.BRANCH_NAME.contains('feature')) {
-                        echo "This is a feature branch"
+                        echo "This is a feature branch!"
                     }
                     else {
-                        echo "This is not a feature branch"
+                        echo "This is not a feature branch!"
                     }
                 }
             }
