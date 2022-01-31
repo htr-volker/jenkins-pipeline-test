@@ -8,7 +8,7 @@ pipeline {
                         echo "This is a feature branch"
                     }
                     else {
-                        echo "This is the main branch"
+                        echo "This is not a feature branch"
                     }
                 }
             }
