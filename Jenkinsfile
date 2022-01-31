@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('What branch is it?') {
+        stage('Which Branch Is It Anyway?') {
             steps {
                 script {
                     if (env.GIT_BRANCH.contains('feature')) {
