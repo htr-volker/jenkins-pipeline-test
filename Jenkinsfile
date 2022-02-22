@@ -14,7 +14,7 @@ pipeline {
                         sh "echo This is a feature branch! Full name: $GIT_BRANCH"
                     } 
                     else {
-                        sh "scho This branch is named: $GIT_BRANCH"
+                        sh "echo This branch is named: $GIT_BRANCH"
                     }
                 }
             }
